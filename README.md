@@ -8,8 +8,7 @@
 '''bash
 $ git clone git@github.com:Shouuuuuu/robosys2025.git
 $ cd robosys 2025
-$
-
+'''
 # Usage
 
 
