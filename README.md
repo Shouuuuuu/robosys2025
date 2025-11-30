@@ -5,12 +5,15 @@
 標準入力から受け取った値の中から素数のみを出力するコマンド
 
 # Install method
-'''bash
+```bash
 $ git clone git@github.com:Shouuuuuu/robosys2025.git
 $ cd robosys 2025
-'''
+```
 # Usage
-
+```bash
+$ seq 10 | ./prime_number
+2 3 5 7
+```
 
 # Author
 * Shoma Takatori
