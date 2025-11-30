@@ -1,13 +1,12 @@
-name: PrimeNumber Test
+name: test
 on: push
-
 jobs:
   test:
     runs-on: ubuntu-20.04
+    strategy:
+      matrix:
+        python-version: ["3.7"]
     steps:
-      - uses: actions/checkout@v3
-      - name: Make scripts executable
-        run: chmod +x ./prime_number ./test.bash
-      - name: Run tests
-        run: bash ./test.bash
-
+    - uses: actions/checkout@v3
+    - name: All test
+      run: bash ./test.bash
