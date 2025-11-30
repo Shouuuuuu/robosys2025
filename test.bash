@@ -10,15 +10,15 @@ ng () {
 res=0
 
 ### NORMAL INPUT ###
-out=$(seq 5 | ./plus)
-[ "${out}" = 15 ] || ng "$LINENO"
+out=$(seq 1 10 | ./prime_number)
+[ "${out}" = "2 3 5 7" ] || ng "$LINENO"
 
 ### STRANGE INPUT ###
-out=$(echo あ| ./plus)
+out=$(echo あ| ./prime_number)
 [ "$?" = 1 ]      || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 
-out=$(echo | ./plus)
+out=$(echo | ./prime_number)
 [ "$?" = 1 ]      || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 

@@ -1,12 +1,17 @@
-# plusコマンド
+# 素数出力コマンド
 ![test](https://github.com/Shouuuuuu/robosys2025/actions/workflows/test.yml/badge.svg)
 
 # Explanation
-
+標準入力から受け取った値の中から素数のみを出力するコマンド
 
 # Install method
+'''bash
+$ git clone git@github.com:Shouuuuuu/robosys2025.git
+$ cd robosys 2025
+$
 
 # Usage
+
 
 # Author
 * Shoma Takatori

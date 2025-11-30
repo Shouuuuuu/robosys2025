@@ -1,0 +1,35 @@
+#!/usr/bin/python3 
+# SPDX-FileCopyrightText: 2025 Shoma Takatori
+# SPDX-License-Identifier: BSD-3-Clause
+
+import sys
+
+
+def is_prime(n):
+    if n < 2:
+        return False
+    for a in range(2, n):
+        if n % a == 0:
+            return False
+    return True
+
+primes = []
+
+for line in sys.stdin:
+
+    if line.strip() == "":
+        sys.exit(1)
+
+    for token in line.split():
+        try:
+            num = int(token)
+        except ValueError:
+            sys.exit(1)
+
+    if is_prime(num):
+        primes.append(str(num))
+
+if primes:
+    print(" ".join(primes))
+
+sys.exit(0)
